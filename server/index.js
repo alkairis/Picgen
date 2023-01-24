@@ -1,11 +1,11 @@
-import express, { Request, Response } from "express";
+import express from "express";
 const app = express();
 
 // Set up the port
 const port = process.env.PORT || 3000;
 
 // Set up the routes
-app.get("/", (req: Request, resp: Response) => {
+app.get("/", (req, resp) => {
   resp.send("Server running");
 });
 
